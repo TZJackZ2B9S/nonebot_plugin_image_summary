@@ -15,10 +15,10 @@ NoneBot2 图片外显更改
 #进入你的nb文件夹
 nb plugin install nonebot-plugin-image-summary
 ```
-2.手动clone
+2.使用pip
 ```
-cd path/to/your/site-packages
-git clone https://github.com/TZJackZ2B9S/nonebot_plugin_image_summary.git
+#进入你的nb文件夹
+pip install nonebot-plugin-image-summary
 #网络环境差请自行使用加速站
 ```
 确保目录结构正确：
