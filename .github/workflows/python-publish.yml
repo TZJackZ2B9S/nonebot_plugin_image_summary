@@ -17,8 +17,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    environment:
-      name: pypi
+    #environment:
+    #  name: pypi
 
     steps:
     - name: Checkout repository
