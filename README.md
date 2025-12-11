@@ -1,0 +1,2 @@
+# nonebot_plugin_image_summary
+用于nonebot2的图片外显插件
