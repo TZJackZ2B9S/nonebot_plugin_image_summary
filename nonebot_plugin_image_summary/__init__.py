@@ -12,6 +12,8 @@ from nonebot.adapters.onebot.v11.permission import GROUP_ADMIN, GROUP_OWNER
 from .config import Config
 from .data_manager import data_manager
 
+__version__ = "0.1.0"
+
 __plugin_meta__ = PluginMetadata(
     name="nonebot_plugin_image_summary",
     description="图片外显管理插件，拦截所有图片消息并注入summary",
@@ -20,8 +22,6 @@ __plugin_meta__ = PluginMetadata(
 )
 
 config = get_plugin_config(Config)
-
-# ================= 辅助函数 =================
 
 async def get_api_quote() -> str:
     """从配置的API列表获取文案，失败则回退到本地"""
@@ -76,8 +76,6 @@ async def get_final_quote() -> str:
         quote = random.choice(quotes) if quotes else "Image"
     
     return quote
-
-# ================= 核心 Hook 逻辑 =================
 
 @Bot.on_calling_api
 async def handle_api_call(bot: Bot, api: str, data: Dict[str, Any]):
@@ -139,8 +137,6 @@ async def handle_api_call(bot: Bot, api: str, data: Dict[str, Any]):
 
             if config.image_summary_debug:
                 logger.debug(f"[ImageSummary] Injected summary: '{quote}' for Group({group_id})")
-
-# ================= 指令处理 =================
 
 # 权限控制：仅群主或超管可用
 PERM = SUPERUSER | GROUP_OWNER
