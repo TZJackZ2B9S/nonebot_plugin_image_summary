@@ -21,6 +21,15 @@ cd path/to/your/site-packages
 git clone https://github.com/TZJackZ2B9S/nonebot_plugin_image_summary.git
 #网络环境差请自行使用加速站
 ```
+确保目录结构正确：
+```
+lib/python3.11/site-packages/nonebot_plugin_image_summary/
+├── __init__.py
+├── config.py
+└── data_manager.py
+```
+
+
 并且到`pyproject.toml`中添加代码
 ```
 plugins =["nonebot_plugin_image_summary"]
