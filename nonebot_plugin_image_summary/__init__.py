@@ -12,7 +12,7 @@ from nonebot.adapters.onebot.v11.permission import GROUP_ADMIN, GROUP_OWNER
 from .config import Config
 from .data_manager import data_manager
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 
 __plugin_meta__ = PluginMetadata(
     name="nonebot_plugin_image_summary",
