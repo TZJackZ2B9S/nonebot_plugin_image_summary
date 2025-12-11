@@ -12,13 +12,14 @@ from nonebot.adapters.onebot.v11.permission import GROUP_ADMIN, GROUP_OWNER
 from .config import Config
 from .data_manager import data_manager
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 __plugin_meta__ = PluginMetadata(
     name="nonebot_plugin_image_summary",
     description="图片外显管理插件，拦截所有图片消息并注入summary",
     usage="开启/关闭外显，添加/删除外显，切换外显源",
     type="application",
+    supported_adapters={"~onebot.v11"},
     homepage="https://github.com/TZJackZ2B9S/nonebot_plugin_image_summary",
     config=Config,
 )
