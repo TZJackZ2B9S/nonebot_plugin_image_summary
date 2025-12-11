@@ -1,7 +1,6 @@
 name: Deploy to PyPI
 
 on:
-  # 监听带有 'v' 开头的标签被推送到远程仓库时触发
   push:
     tags:
       - 'v*.*.*'
