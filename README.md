@@ -19,7 +19,6 @@ nb plugin install nonebot-plugin-image-summary
 ```
 #进入你的nb文件夹
 pip install nonebot-plugin-image-summary
-#网络环境差请自行使用加速站
 ```
 确保目录结构正确：
 ```
