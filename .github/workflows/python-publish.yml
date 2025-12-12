@@ -40,8 +40,3 @@ jobs:
     - name: Publish package to PyPI
       # 这是一个官方推荐的、支持 OIDC 的发布 Action
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        # PyPI Trusted Publishers (OIDC) 会自动处理身份验证，无需 secrets
-        # environment 指定了 PyPI 库名，确保 OIDC 匹配
-        # 这一步会自动查找 dist/ 目录下的 .whl 和 .tar.gz 文件并上传
-        pass: true
